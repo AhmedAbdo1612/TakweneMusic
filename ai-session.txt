@@ -4966,3 +4966,571 @@ I0627 05:18:49.639176  1996 http_helpers.go:245] Failed to make code assist back
 E0627 05:18:49.639176  1996 generation.go:721] Failed to record ConversationOffered metrics: INVALID_ARGUMENT (code 400): Request contains an invalid argument.
 I0627 05:19:33.415726  1996 input_loop.go:459] Responding to tool confirmation: convID=5cddb63b-8577-42ad-911f-589a0574c1df, stepIdx=741, approved=true, sandboxOverride=false, persistGrants=[]
 I0627 05:19:33.415726  1996 server.go:1652] Tool confirmation for conversation 5cddb63b-8577-42ad-911f-589a0574c1df step 741 (type=*gemini_coder_go_proto.Step_RunCommand approved=true)
+I0627 05:19:38.300566  1996 http_helpers.go:199] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x11ab01f6e77c85e5 ResponseID: NzM_apWoI42qnsEP-or24AU
+I0627 05:19:38.325011  1996 tool_confirmation_manager.go:76] Surfacing tool confirmation: "Bash" at step 743
+I0627 05:19:38.470619  1996 http_helpers.go:245] Failed to make code assist backend request (recordCodeAssistMetrics): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+E0627 05:19:38.470619  1996 generation.go:721] Failed to record ConversationOffered metrics: INVALID_ARGUMENT (code 400): Request contains an invalid argument.
+I0627 05:19:41.330935  1996 input_loop.go:459] Responding to tool confirmation: convID=5cddb63b-8577-42ad-911f-589a0574c1df, stepIdx=743, approved=true, sandboxOverride=false, persistGrants=[]
+I0627 05:19:41.330935  1996 server.go:1652] Tool confirmation for conversation 5cddb63b-8577-42ad-911f-589a0574c1df step 743 (type=*gemini_coder_go_proto.Step_RunCommand approved=true)
+I0627 05:19:45.444455  1996 http_helpers.go:199] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x6b329245205eb304 ResponseID: QDM_av6uD7WEkdUP2vu68Q4
+I0627 05:19:45.471768  1996 tool_confirmation_manager.go:76] Surfacing tool confirmation: "Bash" at step 745
+I0627 05:19:45.603002  1996 http_helpers.go:245] Failed to make code assist backend request (recordCodeAssistMetrics): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+E0627 05:19:45.603053  1996 generation.go:721] Failed to record ConversationOffered metrics: INVALID_ARGUMENT (code 400): Request contains an invalid argument.
+I0627 05:19:51.180223  1996 input_loop.go:459] Responding to tool confirmation: convID=5cddb63b-8577-42ad-911f-589a0574c1df, stepIdx=745, approved=true, sandboxOverride=false, persistGrants=[command(git branch)]
+I0627 05:19:51.180223  1996 server.go:1652] Tool confirmation for conversation 5cddb63b-8577-42ad-911f-589a0574c1df step 745 (type=*gemini_coder_go_proto.Step_RunCommand approved=true)
+I0627 05:19:53.828827  1996 http_helpers.go:199] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xfcf1aad4212935b ResponseID: STM_arbrAZX3nsEPpfLuyQU
+I0627 05:19:53.934567  1996 tool_confirmation_manager.go:76] Surfacing tool confirmation: "Bash" at step 747
+I0627 05:19:54.050623  1996 http_helpers.go:245] Failed to make code assist backend request (recordCodeAssistMetrics): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+E0627 05:19:54.050623  1996 generation.go:721] Failed to record ConversationOffered metrics: INVALID_ARGUMENT (code 400): Request contains an invalid argument.
+I0627 05:19:58.909056  1996 input_loop.go:459] Responding to tool confirmation: convID=5cddb63b-8577-42ad-911f-589a0574c1df, stepIdx=747, approved=true, sandboxOverride=false, persistGrants=[]
+I0627 05:19:58.909056  1996 server.go:1652] Tool confirmation for conversation 5cddb63b-8577-42ad-911f-589a0574c1df step 747 (type=*gemini_coder_go_proto.Step_RunCommand approved=true)
+I0627 05:20:02.155360  1996 http_helpers.go:199] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xb3e8c3658e16673f ResponseID: UTM_aqixAti9nsEPpPqq4QI
+I0627 05:20:02.200136  1996 tool_confirmation_manager.go:76] Surfacing tool confirmation: "Bash" at step 749
+I0627 05:20:02.315080  1996 http_helpers.go:245] Failed to make code assist backend request (recordCodeAssistMetrics): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+E0627 05:20:02.315622  1996 generation.go:721] Failed to record ConversationOffered metrics: INVALID_ARGUMENT (code 400): Request contains an invalid argument.
+I0627 05:20:05.266564  1996 input_loop.go:459] Responding to tool confirmation: convID=5cddb63b-8577-42ad-911f-589a0574c1df, stepIdx=749, approved=true, sandboxOverride=false, persistGrants=[]
+I0627 05:20:05.266564  1996 server.go:1652] Tool confirmation for conversation 5cddb63b-8577-42ad-911f-589a0574c1df step 749 (type=*gemini_coder_go_proto.Step_RunCommand approved=true)
+I0627 05:20:07.876485  1996 http_helpers.go:199] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xbac33237768b1b52 ResponseID: VzM_aqqBA424nsEPm8XNsQQ
+I0627 05:20:08.669368  1996 http_helpers.go:245] Failed to make code assist backend request (recordCodeAssistMetrics): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+E0627 05:20:08.669368  1996 generation.go:721] Failed to record ConversationOffered metrics: INVALID_ARGUMENT (code 400): Request contains an invalid argument.
+I0627 05:20:08.749754  1996 quota_manager.go:72] quotaRefreshLoop: starting reload (force=false)
+I0627 05:21:43.989168  1996 input_loop.go:34] HandleUserInput called with text: "install it"
+I0627 05:21:43.989676  1996 conversation_manager.go:437] Forwarding user message to conversation 5cddb63b-8577-42ad-911f-589a0574c1df (items=1, media=0)
+I0627 05:21:43.989685  1996 server.go:1104] Sending user message to conversation 5cddb63b-8577-42ad-911f-589a0574c1df (items=1, media=0)
+I0627 05:21:46.849383  1996 http_helpers.go:199] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x412d244b09b6a1d2 ResponseID: uTM_ar6IH6bk7M8PuqnA2Q0
+I0627 05:21:46.876069  1996 tool_confirmation_manager.go:76] Surfacing tool confirmation: "Bash" at step 753
+I0627 05:21:47.000542  1996 http_helpers.go:245] Failed to make code assist backend request (recordCodeAssistMetrics): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+E0627 05:21:47.000542  1996 generation.go:721] Failed to record ConversationOffered metrics: INVALID_ARGUMENT (code 400): Request contains an invalid argument.
+I0627 05:21:49.405590  1996 input_loop.go:459] Responding to tool confirmation: convID=5cddb63b-8577-42ad-911f-589a0574c1df, stepIdx=753, approved=true, sandboxOverride=false, persistGrants=[]
+I0627 05:21:49.405753  1996 server.go:1652] Tool confirmation for conversation 5cddb63b-8577-42ad-911f-589a0574c1df step 753 (type=*gemini_coder_go_proto.Step_RunCommand approved=true)
+I0627 05:21:54.037859  1996 http_helpers.go:199] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x6e1bfdc9e6b3b08b ResponseID: wDM_at7rLaP-nsEP59KkiQQ
+I0627 05:21:54.188480  1996 tool_confirmation_manager.go:76] Surfacing tool confirmation: "Bash" at step 755
+I0627 05:21:54.331567  1996 http_helpers.go:245] Failed to make code assist backend request (recordCodeAssistMetrics): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+E0627 05:21:54.331567  1996 generation.go:721] Failed to record ConversationOffered metrics: INVALID_ARGUMENT (code 400): Request contains an invalid argument.
+I0627 05:21:55.820610  1996 input_loop.go:459] Responding to tool confirmation: convID=5cddb63b-8577-42ad-911f-589a0574c1df, stepIdx=755, approved=true, sandboxOverride=false, persistGrants=[]
+I0627 05:21:55.820610  1996 server.go:1652] Tool confirmation for conversation 5cddb63b-8577-42ad-911f-589a0574c1df step 755 (type=*gemini_coder_go_proto.Step_RunCommand approved=true)
+I0627 05:21:58.528366  1996 http_helpers.go:199] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x7f86e2e6d83ea359 ResponseID: xTM_apKkKaXnnsEPydKAuQQ
+I0627 05:21:58.595852  1996 tool_confirmation_manager.go:76] Surfacing tool confirmation: "Bash" at step 757
+I0627 05:21:58.768989  1996 http_helpers.go:245] Failed to make code assist backend request (recordCodeAssistMetrics): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+E0627 05:21:58.768989  1996 generation.go:721] Failed to record ConversationOffered metrics: INVALID_ARGUMENT (code 400): Request contains an invalid argument.
+I0627 05:22:03.002430  1996 input_loop.go:459] Responding to tool confirmation: convID=5cddb63b-8577-42ad-911f-589a0574c1df, stepIdx=757, approved=true, sandboxOverride=false, persistGrants=[]
+I0627 05:22:03.002430  1996 server.go:1652] Tool confirmation for conversation 5cddb63b-8577-42ad-911f-589a0574c1df step 757 (type=*gemini_coder_go_proto.Step_RunCommand approved=true)
+I0627 05:22:06.471931  1996 http_helpers.go:199] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x996f8a0c067b4cd6 ResponseID: zTM_aoXqHJHBvdIP2vm4iQc
+I0627 05:22:06.515048  1996 tool_confirmation_manager.go:76] Surfacing tool confirmation: "Bash" at step 759
+I0627 05:22:06.645882  1996 http_helpers.go:245] Failed to make code assist backend request (recordCodeAssistMetrics): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+E0627 05:22:06.645882  1996 generation.go:721] Failed to record ConversationOffered metrics: INVALID_ARGUMENT (code 400): Request contains an invalid argument.
+I0627 05:22:14.276556  1996 input_loop.go:459] Responding to tool confirmation: convID=5cddb63b-8577-42ad-911f-589a0574c1df, stepIdx=759, approved=true, sandboxOverride=false, persistGrants=[]
+I0627 05:22:14.276556  1996 server.go:1652] Tool confirmation for conversation 5cddb63b-8577-42ad-911f-589a0574c1df step 759 (type=*gemini_coder_go_proto.Step_RunCommand approved=true)
+I0627 05:22:22.330153  1996 http_helpers.go:199] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x5549ec4626d02b44 ResponseID: 3TM_aseVBIGrnsEP9u_Y2Q0
+I0627 05:22:22.713581  1996 quota_manager.go:72] quotaRefreshLoop: starting reload (force=false)
+I0627 05:22:22.721579  1996 http_helpers.go:245] Failed to make code assist backend request (recordCodeAssistMetrics): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+E0627 05:22:22.722580  1996 generation.go:721] Failed to record ConversationOffered metrics: INVALID_ARGUMENT (code 400): Request contains an invalid argument.
+I0627 05:23:19.887984  1996 input_loop.go:34] HandleUserInput called with text: "make a good readme file make it impresive and very attractive"
+I0627 05:23:19.887984  1996 conversation_manager.go:437] Forwarding user message to conversation 5cddb63b-8577-42ad-911f-589a0574c1df (items=1, media=0)
+I0627 05:23:19.887984  1996 server.go:1104] Sending user message to conversation 5cddb63b-8577-42ad-911f-589a0574c1df (items=1, media=0)
+I0627 05:23:20.111056  1996 http_helpers.go:199] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xc9f6ffc837025468
+I0627 05:23:20.803612  1996 http_helpers.go:199] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x12785b5fb9ae0bc3
+I0627 05:23:23.763216  1996 http_helpers.go:199] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xbb5b9101ef3f4cde ResponseID: GTQ_auX_H9OakdUPz52smA0
+I0627 05:23:27.046231  1996 http_helpers.go:245] Failed to make code assist backend request (recordCodeAssistMetrics): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+E0627 05:23:27.046231  1996 generation.go:721] Failed to record ConversationOffered metrics: INVALID_ARGUMENT (code 400): Request contains an invalid argument.
+I0627 05:23:29.978023  1996 http_helpers.go:199] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xddc00620dab5ce02 ResponseID: IDQ_av-JH5XisgLW1JfQBQ
+I0627 05:23:30.001294  1996 tool_confirmation_manager.go:76] Surfacing tool confirmation: "Bash" at step 765
+I0627 05:23:30.122019  1996 http_helpers.go:245] Failed to make code assist backend request (recordCodeAssistMetrics): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+E0627 05:23:30.122019  1996 generation.go:721] Failed to record ConversationOffered metrics: INVALID_ARGUMENT (code 400): Request contains an invalid argument.
+I0627 05:23:55.363554  1996 input_loop.go:459] Responding to tool confirmation: convID=5cddb63b-8577-42ad-911f-589a0574c1df, stepIdx=765, approved=true, sandboxOverride=false, persistGrants=[]
+I0627 05:23:55.364087  1996 server.go:1652] Tool confirmation for conversation 5cddb63b-8577-42ad-911f-589a0574c1df step 765 (type=*gemini_coder_go_proto.Step_RunCommand approved=true)
+I0627 05:23:58.074376  1996 http_helpers.go:199] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x19c0ff28c3b9ea9a ResponseID: PTQ_aqfODdScnsEP07Dh8QE
+I0627 05:23:58.108073  1996 tool_confirmation_manager.go:76] Surfacing tool confirmation: "Bash" at step 767
+I0627 05:23:58.248420  1996 http_helpers.go:245] Failed to make code assist backend request (recordCodeAssistMetrics): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+E0627 05:23:58.249423  1996 generation.go:721] Failed to record ConversationOffered metrics: INVALID_ARGUMENT (code 400): Request contains an invalid argument.
+I0627 05:24:00.864094  1996 input_loop.go:459] Responding to tool confirmation: convID=5cddb63b-8577-42ad-911f-589a0574c1df, stepIdx=767, approved=true, sandboxOverride=false, persistGrants=[]
+I0627 05:24:00.864094  1996 server.go:1652] Tool confirmation for conversation 5cddb63b-8577-42ad-911f-589a0574c1df step 767 (type=*gemini_coder_go_proto.Step_RunCommand approved=true)
+I0627 05:24:04.170612  1996 http_helpers.go:199] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x8fe0f5cb28499a8c ResponseID: QjQ_apieM424nsEPm8XNsQQ
+I0627 05:24:04.247131  1996 tool_confirmation_manager.go:76] Surfacing tool confirmation: "Bash" at step 769
+I0627 05:24:04.378081  1996 http_helpers.go:245] Failed to make code assist backend request (recordCodeAssistMetrics): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+E0627 05:24:04.378081  1996 generation.go:721] Failed to record ConversationOffered metrics: INVALID_ARGUMENT (code 400): Request contains an invalid argument.
+I0627 05:24:10.301898  1996 input_loop.go:459] Responding to tool confirmation: convID=5cddb63b-8577-42ad-911f-589a0574c1df, stepIdx=769, approved=true, sandboxOverride=false, persistGrants=[]
+I0627 05:24:10.301898  1996 server.go:1652] Tool confirmation for conversation 5cddb63b-8577-42ad-911f-589a0574c1df step 769 (type=*gemini_coder_go_proto.Step_RunCommand approved=true)
+I0627 05:24:15.430591  1996 http_helpers.go:199] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x1fbdd9c5ccfd363d ResponseID: TjQ_ap_nE9Pj7M8PnvHwIQ
+I0627 05:24:16.068112  1996 quota_manager.go:72] quotaRefreshLoop: starting reload (force=false)
+I0627 05:24:16.083105  1996 http_helpers.go:245] Failed to make code assist backend request (recordCodeAssistMetrics): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+E0627 05:24:16.084103  1996 generation.go:721] Failed to record ConversationOffered metrics: INVALID_ARGUMENT (code 400): Request contains an invalid argument.
+I0627 05:26:31.604595  1996 input_loop.go:34] HandleUserInput called with text: "Act as an expert .NET 10 developer. Refactor our Carter endpoint modules to include full OpenAPI metadata documentation using .WithName(), .WithSummary(), .WithDescription(), and explicit .Produces<T>() status mappings for both successful standard ApiResponse<T> wrappers and error ProblemDetails outcomes."
+I0627 05:26:31.605590  1996 conversation_manager.go:437] Forwarding user message to conversation 5cddb63b-8577-42ad-911f-589a0574c1df (items=1, media=0)
+I0627 05:26:31.605590  1996 server.go:1104] Sending user message to conversation 5cddb63b-8577-42ad-911f-589a0574c1df (items=1, media=0)
+I0627 05:26:36.048231  1996 http_helpers.go:199] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x8ce2bee227b18ad4 ResponseID: 2TQ_aqOaD5fHkdUPnJ6lGA
+I0627 05:26:36.299045  1996 http_helpers.go:245] Failed to make code assist backend request (recordCodeAssistMetrics): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+E0627 05:26:36.299564  1996 generation.go:721] Failed to record ConversationOffered metrics: INVALID_ARGUMENT (code 400): Request contains an invalid argument.
+I0627 05:26:39.135355  1996 http_helpers.go:199] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xe1c253d151ecfa01 ResponseID: 3TQ_atzELvTc7M8P-_7UoAU
+I0627 05:26:39.284476  1996 http_helpers.go:245] Failed to make code assist backend request (recordCodeAssistMetrics): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+E0627 05:26:39.285475  1996 generation.go:721] Failed to record ConversationOffered metrics: INVALID_ARGUMENT (code 400): Request contains an invalid argument.
+I0627 05:26:42.077232  1996 http_helpers.go:199] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xdc896acde1f0032a ResponseID: 4DQ_arv8MImYkdUPnYCg4AE
+I0627 05:26:42.244383  1996 http_helpers.go:245] Failed to make code assist backend request (recordCodeAssistMetrics): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+E0627 05:26:42.245384  1996 generation.go:721] Failed to record ConversationOffered metrics: INVALID_ARGUMENT (code 400): Request contains an invalid argument.
+I0627 05:26:44.967269  1996 http_helpers.go:199] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x276bde33b2a3a047 ResponseID: 4zQ_asvHO8jikdUPvsDUKA
+I0627 05:26:45.135154  1996 http_helpers.go:245] Failed to make code assist backend request (recordCodeAssistMetrics): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+E0627 05:26:45.135154  1996 generation.go:721] Failed to record ConversationOffered metrics: INVALID_ARGUMENT (code 400): Request contains an invalid argument.
+I0627 05:26:47.671890  1996 http_helpers.go:199] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xc7ee75d8c630e32b ResponseID: 5jQ_asTsLqSDkdUPub7lqQI
+I0627 05:26:47.805194  1996 http_helpers.go:245] Failed to make code assist backend request (recordCodeAssistMetrics): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+E0627 05:26:47.805289  1996 generation.go:721] Failed to record ConversationOffered metrics: INVALID_ARGUMENT (code 400): Request contains an invalid argument.
+I0627 05:26:50.205474  1996 http_helpers.go:199] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xa149d73ba34c3236 ResponseID: 6TQ_aqqvFO75nsEP-8jriAQ
+I0627 05:26:50.370407  1996 http_helpers.go:245] Failed to make code assist backend request (recordCodeAssistMetrics): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+E0627 05:26:50.370407  1996 generation.go:721] Failed to record ConversationOffered metrics: INVALID_ARGUMENT (code 400): Request contains an invalid argument.
+I0627 05:26:53.309818  1996 http_helpers.go:199] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x9a3d142d7d43a958 ResponseID: 6zQ_arXGMf37xs0Plt-72AU
+I0627 05:26:53.515605  1996 http_helpers.go:245] Failed to make code assist backend request (recordCodeAssistMetrics): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+E0627 05:26:53.515605  1996 generation.go:721] Failed to record ConversationOffered metrics: INVALID_ARGUMENT (code 400): Request contains an invalid argument.
+I0627 05:27:00.342687  1996 http_helpers.go:199] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x6cfa0563be790455 ResponseID: 8jQ_atDkLbWEkdUPuc66sQ0
+I0627 05:27:00.750877  1996 http_helpers.go:245] Failed to make code assist backend request (recordCodeAssistMetrics): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+E0627 05:27:00.750877  1996 generation.go:721] Failed to record ConversationOffered metrics: INVALID_ARGUMENT (code 400): Request contains an invalid argument.
+I0627 05:27:03.297586  1996 http_helpers.go:199] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x6441f200679364b4 ResponseID: 9jQ_ao37FbWEkdUPuc66sQ0
+I0627 05:27:03.556251  1996 http_helpers.go:245] Failed to make code assist backend request (recordCodeAssistMetrics): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+E0627 05:27:03.557315  1996 generation.go:721] Failed to record ConversationOffered metrics: INVALID_ARGUMENT (code 400): Request contains an invalid argument.
+I0627 05:27:06.044416  1996 http_helpers.go:199] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x4518a3925ce8773e ResponseID: -TQ_arjwBabk7M8PuqnA2Q0
+I0627 05:27:06.859833  1996 http_helpers.go:245] Failed to make code assist backend request (recordCodeAssistMetrics): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+E0627 05:27:06.860183  1996 generation.go:721] Failed to record ConversationOffered metrics: INVALID_ARGUMENT (code 400): Request contains an invalid argument.
+I0627 05:27:12.710977  1996 http_helpers.go:199] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xe8d3b818d004e600 ResponseID: _zQ_asy7J8rk7M8P_8_nuAE
+I0627 05:27:12.903382  1996 http_helpers.go:245] Failed to make code assist backend request (recordCodeAssistMetrics): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+E0627 05:27:12.903382  1996 generation.go:721] Failed to record ConversationOffered metrics: INVALID_ARGUMENT (code 400): Request contains an invalid argument.
+I0627 05:27:15.535989  1996 http_helpers.go:199] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xbef0db30166477d ResponseID: AjU_aqOwG6SDkdUPub7lqQI
+I0627 05:27:15.730784  1996 http_helpers.go:245] Failed to make code assist backend request (recordCodeAssistMetrics): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+E0627 05:27:15.732383  1996 generation.go:721] Failed to record ConversationOffered metrics: INVALID_ARGUMENT (code 400): Request contains an invalid argument.
+I0627 05:27:18.399059  1996 http_helpers.go:199] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x69e286dd2c7d2ab ResponseID: BTU_asrsFqSDkdUPu83jkQ0
+I0627 05:27:18.961799  1996 http_helpers.go:245] Failed to make code assist backend request (recordCodeAssistMetrics): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+E0627 05:27:18.961799  1996 generation.go:721] Failed to record ConversationOffered metrics: INVALID_ARGUMENT (code 400): Request contains an invalid argument.
+I0627 05:27:25.875406  1996 http_helpers.go:199] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x2342581da30b8eb0 ResponseID: DDU_apafMqj7nsEPismnSQ
+I0627 05:27:26.018973  1996 http_helpers.go:245] Failed to make code assist backend request (recordCodeAssistMetrics): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+E0627 05:27:26.018973  1996 generation.go:721] Failed to record ConversationOffered metrics: INVALID_ARGUMENT (code 400): Request contains an invalid argument.
+I0627 05:27:28.753509  1996 http_helpers.go:199] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xcfc6a06f4d248c5d ResponseID: DzU_aouiJI24nsEPm8XNsQQ
+I0627 05:27:28.885108  1996 http_helpers.go:245] Failed to make code assist backend request (recordCodeAssistMetrics): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+E0627 05:27:28.886074  1996 generation.go:721] Failed to record ConversationOffered metrics: INVALID_ARGUMENT (code 400): Request contains an invalid argument.
+I0627 05:27:36.402961  1996 http_helpers.go:199] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x4fef315ae7c185a5 ResponseID: FjU_auewF424nsEPm8XNsQQ
+I0627 05:27:36.571173  1996 http_helpers.go:245] Failed to make code assist backend request (recordCodeAssistMetrics): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+E0627 05:27:36.571173  1996 generation.go:721] Failed to record ConversationOffered metrics: INVALID_ARGUMENT (code 400): Request contains an invalid argument.
+I0627 05:27:39.781946  1996 http_helpers.go:199] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xcd2394bc172d813d ResponseID: GjU_arSkCaP-nsEP59KkiQQ
+I0627 05:27:39.950632  1996 http_helpers.go:245] Failed to make code assist backend request (recordCodeAssistMetrics): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+E0627 05:27:39.950632  1996 generation.go:721] Failed to record ConversationOffered metrics: INVALID_ARGUMENT (code 400): Request contains an invalid argument.
+I0627 05:27:44.763913  1996 http_helpers.go:199] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x9fbd9cc1459814f3 ResponseID: HjU_atSfPNvxvdIPsOfCkQg
+I0627 05:27:45.305092  1996 http_helpers.go:245] Failed to make code assist backend request (recordCodeAssistMetrics): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+E0627 05:27:45.305092  1996 generation.go:721] Failed to record ConversationOffered metrics: INVALID_ARGUMENT (code 400): Request contains an invalid argument.
+I0627 05:27:48.624259  1996 http_helpers.go:199] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x45230f9fa6ae1712 ResponseID: IjU_ar2cM9Xl7M8Px-7yQQ
+I0627 05:27:48.743387  1996 http_helpers.go:245] Failed to make code assist backend request (recordCodeAssistMetrics): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+E0627 05:27:48.744363  1996 generation.go:721] Failed to record ConversationOffered metrics: INVALID_ARGUMENT (code 400): Request contains an invalid argument.
+I0627 05:27:52.067903  1996 http_helpers.go:199] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xe412f808c04bf69b ResponseID: JjU_apjBF_jj7M8PvrfIwAU
+I0627 05:27:52.914106  1996 http_helpers.go:245] Failed to make code assist backend request (recordCodeAssistMetrics): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+E0627 05:27:52.914106  1996 generation.go:721] Failed to record ConversationOffered metrics: INVALID_ARGUMENT (code 400): Request contains an invalid argument.
+I0627 05:27:57.574767  1996 http_helpers.go:199] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xbd8487671635623d ResponseID: KzU_av3rKunNkdUP3ITEmQ0
+I0627 05:27:57.732603  1996 http_helpers.go:245] Failed to make code assist backend request (recordCodeAssistMetrics): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+E0627 05:27:57.732603  1996 generation.go:721] Failed to record ConversationOffered metrics: INVALID_ARGUMENT (code 400): Request contains an invalid argument.
+I0627 05:28:01.263103  1996 http_helpers.go:199] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x46bf5fd571534d0f ResponseID: LzU_asm_FsjikdUPvsDUKA
+I0627 05:28:02.002879  1996 http_helpers.go:245] Failed to make code assist backend request (recordCodeAssistMetrics): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+E0627 05:28:02.002879  1996 generation.go:721] Failed to record ConversationOffered metrics: INVALID_ARGUMENT (code 400): Request contains an invalid argument.
+I0627 05:28:06.221756  1996 http_helpers.go:199] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xaf069e405dffca1 ResponseID: NTU_av3SBoW8kdUPoYS_6Q4
+I0627 05:28:06.403689  1996 http_helpers.go:245] Failed to make code assist backend request (recordCodeAssistMetrics): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+E0627 05:28:06.403689  1996 generation.go:721] Failed to record ConversationOffered metrics: INVALID_ARGUMENT (code 400): Request contains an invalid argument.
+I0627 05:28:09.081857  1996 http_helpers.go:199] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x9dfbefecaf62b201 ResponseID: ODU_asLDCPSZkdUPpsy2wA8
+I0627 05:28:09.246423  1996 http_helpers.go:245] Failed to make code assist backend request (recordCodeAssistMetrics): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+E0627 05:28:09.246423  1996 generation.go:721] Failed to record ConversationOffered metrics: INVALID_ARGUMENT (code 400): Request contains an invalid argument.
+I0627 05:28:13.197735  1996 http_helpers.go:199] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x170f0615771f198c ResponseID: OzU_asK1KZ_l7M8Prt-imQk
+I0627 05:28:14.056881  1996 http_helpers.go:245] Failed to make code assist backend request (recordCodeAssistMetrics): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+E0627 05:28:14.056881  1996 generation.go:721] Failed to record ConversationOffered metrics: INVALID_ARGUMENT (code 400): Request contains an invalid argument.
+I0627 05:28:19.796056  1996 http_helpers.go:199] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x6a2368df1f30866f ResponseID: QjU_asipC7zLkdUPkKG5-AM
+I0627 05:28:19.937504  1996 http_helpers.go:245] Failed to make code assist backend request (recordCodeAssistMetrics): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+E0627 05:28:19.937504  1996 generation.go:721] Failed to record ConversationOffered metrics: INVALID_ARGUMENT (code 400): Request contains an invalid argument.
+I0627 05:28:22.302159  1996 http_helpers.go:199] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x8b76eb02c7daeb3d ResponseID: RTU_atfwJIbjnsEPl8ewwQU
+I0627 05:28:23.012532  1996 http_helpers.go:245] Failed to make code assist backend request (recordCodeAssistMetrics): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+E0627 05:28:23.012532  1996 generation.go:721] Failed to record ConversationOffered metrics: INVALID_ARGUMENT (code 400): Request contains an invalid argument.
+I0627 05:28:23.594965  1996 http_helpers.go:199] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xb9c3f30084bb6758
+I0627 05:28:23.615622  1996 http_helpers.go:199] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xad87052fcafb99cb
+I0627 05:28:27.774419  1996 http_helpers.go:199] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xb8e15ce6f0941bd ResponseID: SzU_asX3AdScnsEP07Dh8QE
+I0627 05:28:27.809416  1996 tool_confirmation_manager.go:76] Surfacing tool confirmation: "Bash" at step 827
+I0627 05:28:27.930499  1996 http_helpers.go:245] Failed to make code assist backend request (recordCodeAssistMetrics): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+E0627 05:28:27.930499  1996 generation.go:721] Failed to record ConversationOffered metrics: INVALID_ARGUMENT (code 400): Request contains an invalid argument.
+I0627 05:28:38.437929  1996 input_loop.go:459] Responding to tool confirmation: convID=5cddb63b-8577-42ad-911f-589a0574c1df, stepIdx=827, approved=true, sandboxOverride=false, persistGrants=[]
+I0627 05:28:38.437929  1996 server.go:1652] Tool confirmation for conversation 5cddb63b-8577-42ad-911f-589a0574c1df step 827 (type=*gemini_coder_go_proto.Step_RunCommand approved=true)
+I0627 05:28:46.811330  1996 http_helpers.go:199] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x786e5e5aef19961f ResponseID: XTU_avbsOvjj7M8PvrfIwAU
+I0627 05:28:46.941373  1996 http_helpers.go:245] Failed to make code assist backend request (recordCodeAssistMetrics): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+E0627 05:28:46.942372  1996 generation.go:721] Failed to record ConversationOffered metrics: INVALID_ARGUMENT (code 400): Request contains an invalid argument.
+I0627 05:28:50.632862  1996 http_helpers.go:199] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x234ad18b19985cd ResponseID: YDU_atOiMYbr7M8PjafEGQ
+I0627 05:28:50.807770  1996 http_helpers.go:245] Failed to make code assist backend request (recordCodeAssistMetrics): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+E0627 05:28:50.807770  1996 generation.go:721] Failed to record ConversationOffered metrics: INVALID_ARGUMENT (code 400): Request contains an invalid argument.
+I0627 05:28:56.505897  1996 http_helpers.go:199] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x85473e56a14658c6 ResponseID: ZzU_arPgJJX3nsEPpfLuyQU
+I0627 05:28:56.627568  1996 tool_confirmation_manager.go:76] Surfacing tool confirmation: "Bash" at step 833
+I0627 05:28:56.724029  1996 http_helpers.go:245] Failed to make code assist backend request (recordCodeAssistMetrics): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+E0627 05:28:56.724583  1996 generation.go:721] Failed to record ConversationOffered metrics: INVALID_ARGUMENT (code 400): Request contains an invalid argument.
+I0627 05:29:15.349059  1996 input_loop.go:459] Responding to tool confirmation: convID=5cddb63b-8577-42ad-911f-589a0574c1df, stepIdx=833, approved=true, sandboxOverride=false, persistGrants=[]
+I0627 05:29:15.349059  1996 server.go:1652] Tool confirmation for conversation 5cddb63b-8577-42ad-911f-589a0574c1df step 833 (type=*gemini_coder_go_proto.Step_RunCommand approved=true)
+I0627 05:29:18.569959  1996 http_helpers.go:199] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xf80671869fc8ec9f ResponseID: fTU_apG3Kb32nsEPuf71oQM
+I0627 05:29:18.608159  1996 tool_confirmation_manager.go:76] Surfacing tool confirmation: "Bash" at step 835
+I0627 05:29:18.727872  1996 http_helpers.go:245] Failed to make code assist backend request (recordCodeAssistMetrics): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+E0627 05:29:18.727872  1996 generation.go:721] Failed to record ConversationOffered metrics: INVALID_ARGUMENT (code 400): Request contains an invalid argument.
+I0627 05:29:46.932862  1996 input_loop.go:459] Responding to tool confirmation: convID=5cddb63b-8577-42ad-911f-589a0574c1df, stepIdx=835, approved=true, sandboxOverride=false, persistGrants=[]
+I0627 05:29:46.932862  1996 server.go:1652] Tool confirmation for conversation 5cddb63b-8577-42ad-911f-589a0574c1df step 835 (type=*gemini_coder_go_proto.Step_RunCommand approved=true)
+I0627 05:29:53.179457  1996 http_helpers.go:199] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x206e536778be2693 ResponseID: oDU_apDiFcHRnsEP2IWZuAU
+I0627 05:29:53.922517  1996 http_helpers.go:245] Failed to make code assist backend request (recordCodeAssistMetrics): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+E0627 05:29:53.923042  1996 generation.go:721] Failed to record ConversationOffered metrics: INVALID_ARGUMENT (code 400): Request contains an invalid argument.
+I0627 05:29:53.953520  1996 quota_manager.go:72] quotaRefreshLoop: starting reload (force=false)
+I0627 05:30:42.322098  1996 input_loop.go:34] HandleUserInput called with text: "create a commit and push it"
+I0627 05:30:42.322681  1996 conversation_manager.go:437] Forwarding user message to conversation 5cddb63b-8577-42ad-911f-589a0574c1df (items=1, media=0)
+I0627 05:30:42.322681  1996 server.go:1104] Sending user message to conversation 5cddb63b-8577-42ad-911f-589a0574c1df (items=1, media=0)
+I0627 05:30:45.257364  1996 http_helpers.go:199] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xe89282e20c0a467a ResponseID: 1DU_asTaErKL7M8P06bZIQ
+I0627 05:30:45.280160  1996 tool_confirmation_manager.go:76] Surfacing tool confirmation: "Bash" at step 839
+I0627 05:30:45.419585  1996 http_helpers.go:245] Failed to make code assist backend request (recordCodeAssistMetrics): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+E0627 05:30:45.419585  1996 generation.go:721] Failed to record ConversationOffered metrics: INVALID_ARGUMENT (code 400): Request contains an invalid argument.
+I0627 05:31:00.632179  1996 input_loop.go:459] Responding to tool confirmation: convID=5cddb63b-8577-42ad-911f-589a0574c1df, stepIdx=839, approved=true, sandboxOverride=false, persistGrants=[]
+I0627 05:31:00.632179  1996 server.go:1652] Tool confirmation for conversation 5cddb63b-8577-42ad-911f-589a0574c1df step 839 (type=*gemini_coder_go_proto.Step_RunCommand approved=true)
+I0627 05:31:03.873957  1996 http_helpers.go:199] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x86215f34fdef45ac ResponseID: 5jU_at-pLqDtkdUP2u_JqAE
+I0627 05:31:03.900977  1996 tool_confirmation_manager.go:76] Surfacing tool confirmation: "Bash" at step 841
+I0627 05:31:04.038071  1996 http_helpers.go:245] Failed to make code assist backend request (recordCodeAssistMetrics): {
+  "error": {
+    "code": 400,
+    "message": "Request contains an invalid argument.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+E0627 05:31:04.038071  1996 generation.go:721] Failed to record ConversationOffered metrics: INVALID_ARGUMENT (code 400): Request contains an invalid argument.
+I0627 05:32:12.684502  1996 input_loop.go:459] Responding to tool confirmation: convID=5cddb63b-8577-42ad-911f-589a0574c1df, stepIdx=841, approved=true, sandboxOverride=false, persistGrants=[]
+I0627 05:32:12.684502  1996 server.go:1652] Tool confirmation for conversation 5cddb63b-8577-42ad-911f-589a0574c1df step 841 (type=*gemini_coder_go_proto.Step_RunCommand approved=true)

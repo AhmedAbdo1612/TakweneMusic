@@ -12,3 +12,10 @@
 Thumbs.db
 ehthumbs.db
 Desktop.ini
+
+# Ignore PDF files
+*.pdf
+
+# Ignore all markdown files except README.md
+*.md
+!README.md
