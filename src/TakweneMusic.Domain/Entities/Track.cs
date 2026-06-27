@@ -13,10 +13,7 @@ public class Track
     public string Genre { get; private set; } = string.Empty;
     public TrackStatus Status { get; private set; }
 
-    // Parameterless constructor for serialization / EF Core compatibility
-#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
-    private Track() { }
-#pragma warning restore CS8618
+     private Track() { }
 
     public Track(Guid id, string title, Guid artistId, string isrc, DateTime releaseDate, string genre, TrackStatus status)
     {
