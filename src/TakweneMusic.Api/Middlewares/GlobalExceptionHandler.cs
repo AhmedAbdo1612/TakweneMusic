@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using TakweneMusic.Application.Common.Models;
 
 namespace TakweneMusic.Api.Middlewares;
 
@@ -76,7 +77,9 @@ public class GlobalExceptionHandler : IExceptionHandler
                 Title = title,
                 Detail = detail
             };
-            await httpContext.Response.WriteAsJsonAsync(validationProblemDetails, cancellationToken);
+            
+            var response = ApiResponse.Failure(detail, validationProblemDetails);
+            await httpContext.Response.WriteAsJsonAsync(response, cancellationToken);
         }
         else
         {
@@ -86,7 +89,9 @@ public class GlobalExceptionHandler : IExceptionHandler
                 Title = title,
                 Detail = detail
             };
-            await httpContext.Response.WriteAsJsonAsync(problemDetails, cancellationToken);
+
+            var response = ApiResponse.Failure(detail, problemDetails);
+            await httpContext.Response.WriteAsJsonAsync(response, cancellationToken);
         }
 
         return true;
