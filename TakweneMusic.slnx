@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/TakweneMusic.Api/TakweneMusic.Api.csproj" />
+    <Project Path="src/TakweneMusic.Application/TakweneMusic.Application.csproj" />
+    <Project Path="src/TakweneMusic.Domain/TakweneMusic.Domain.csproj" />
+    <Project Path="src/TakweneMusic.Infrastructure/TakweneMusic.Infrastructure.csproj" />
+  </Folder>
+</Solution>
