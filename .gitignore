@@ -22,3 +22,7 @@ Desktop.ini
 
 # Ignore session logs
 ai-session.txt
+
+# Ignore application settings files
+appsettings.json
+appsettings.Development.json
