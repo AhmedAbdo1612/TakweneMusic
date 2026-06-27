@@ -4,6 +4,7 @@ using Carter;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
 using TakweneMusic.Application.Artists.Commands.DeleteArtist;
 using TakweneMusic.Application.Common.Models;
@@ -18,6 +19,13 @@ public class DeleteArtist : ICarterModule
         {
             var result = await sender.Send(new DeleteArtistCommand(id));
             return Results.Ok(ApiResponse.Success(result, "Artist deleted successfully."));
-        }).RequireAuthorization();
+        })
+        .WithName("DeleteArtist")
+        .WithSummary("Delete an artist")
+        .WithDescription("Deletes an artist profile from the system by their ID.")
+        .Produces<ApiResponse<bool>>(StatusCodes.Status200OK)
+        .Produces<ProblemDetails>(StatusCodes.Status401Unauthorized)
+        .Produces<ProblemDetails>(StatusCodes.Status404NotFound)
+        .RequireAuthorization();
     }
 }

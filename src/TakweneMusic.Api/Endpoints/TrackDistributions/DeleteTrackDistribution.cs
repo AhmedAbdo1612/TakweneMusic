@@ -4,6 +4,7 @@ using Carter;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
 using TakweneMusic.Application.Common.Models;
 using TakweneMusic.Application.TrackDistributions.Commands.DeleteTrackDistribution;
@@ -18,6 +19,13 @@ public class DeleteTrackDistribution : ICarterModule
         {
             var result = await sender.Send(new DeleteTrackDistributionCommand(id));
             return Results.Ok(ApiResponse.Success(result, "Track distribution deleted successfully."));
-        }).RequireAuthorization();
+        })
+        .WithName("DeleteTrackDistribution")
+        .WithSummary("Delete a track distribution")
+        .WithDescription("Deletes a track distribution task from the system by its ID.")
+        .Produces<ApiResponse<bool>>(StatusCodes.Status200OK)
+        .Produces<ProblemDetails>(StatusCodes.Status401Unauthorized)
+        .Produces<ProblemDetails>(StatusCodes.Status404NotFound)
+        .RequireAuthorization();
     }
 }
