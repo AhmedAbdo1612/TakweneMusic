@@ -37,19 +37,15 @@ builder.Services.AddOpenApiDocument(config =>
 
 var app = builder.Build();
 
-// Enable Global Exception Handling Middleware
 app.UseExceptionHandler();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+app.UseOpenApi();
+app.UseSwaggerUi(settings =>
 {
-    app.UseOpenApi();
-    app.UseSwaggerUi(settings =>
-    {
-        settings.Path = "/swagger";
-        settings.DocumentPath = "/swagger/v1/swagger.json";
-    });
-}
+    settings.Path = "/swagger";
+    settings.DocumentPath = "/swagger/v1/swagger.json";
+});
 
 app.UseHttpsRedirection();
 app.UseAuthentication();
