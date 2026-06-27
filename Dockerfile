@@ -1,8 +1,8 @@
-# Build using .NET SDK 9.0 on Alpine Linux
-FROM mcr.microsoft.com/dotnet/sdk:9.0-alpine AS build
+# Build Stage using .NET 10.0 SDK (Fixes NETSDK1045 target framework build error)
+FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
 WORKDIR /src
 
-# Copy solution and project definitions
+# Copy solution and project files
 COPY TakweneMusic.slnx ./
 COPY src/TakweneMusic.Domain/TakweneMusic.Domain.csproj src/TakweneMusic.Domain/
 COPY src/TakweneMusic.Application/TakweneMusic.Application.csproj src/TakweneMusic.Application/
@@ -16,15 +16,11 @@ RUN dotnet restore src/TakweneMusic.Api/TakweneMusic.Api.csproj
 COPY src/ src/
 RUN dotnet publish src/TakweneMusic.Api/TakweneMusic.Api.csproj -c Release -o /app/publish --no-restore /p:UseAppHost=false
 
-# Runtime using ASP.NET Core 9.0 on Alpine Linux (drastically smaller image size)
-FROM mcr.microsoft.com/dotnet/aspnet:9.0-alpine AS final
+# Runtime Stage using .NET 10.0 ASP.NET Runtime
+FROM mcr.microsoft.com/dotnet/aspnet:10.0 AS final
 WORKDIR /app
 
-# Install ICU libraries (required for EF Core database collation/sorting on Alpine)
-RUN apk add --no-cache icu-libs
-ENV DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=false
-
-# Expose Render's default port 10000
+# Expose Render standard port 10000
 EXPOSE 10000
 ENV ASPNETCORE_URLS=http://+:10000
 ENV ASPNETCORE_ENVIRONMENT=Production
