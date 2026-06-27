@@ -30,6 +30,12 @@ graph TD
     Application --> Domain[TakweneMusic.Domain]
 ```
 
+### 📊 Database Schema
+
+Below is the database schema diagram representing the relationships between core entities:
+
+![Database Schema](Schema.png)
+
 ### 📂 Folder Structure
 
 ```text
