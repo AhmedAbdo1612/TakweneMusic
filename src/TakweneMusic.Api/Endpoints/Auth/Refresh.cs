@@ -11,11 +11,11 @@ using TakweneMusic.Application.Users.Common;
 
 namespace TakweneMusic.Api.Endpoints.Auth;
 
-public class Refresh : ICarterModule
+public static class Refresh
 {
-    public void AddRoutes(IEndpointRouteBuilder app)
+    public static void MapEndpoint(this RouteGroupBuilder app)
     {
-        app.MapPost("/api/auth/refresh", async (RotateRefreshTokenCommand command, ISender sender) =>
+        app.MapPost("/refresh", async (RotateRefreshTokenCommand command, ISender sender) =>
         {
             var result = await sender.Send(command);
             return Results.Ok(ApiResponse.Success(result, "Token refreshed successfully."));

@@ -12,11 +12,11 @@ using TakweneMusic.Application.TrackDistributions.Queries.GetTrackDistributionBy
 
 namespace TakweneMusic.Api.Endpoints.TrackDistributions;
 
-public class GetTrackDistributionById : ICarterModule
+public static class GetTrackDistributionById
 {
-    public void AddRoutes(IEndpointRouteBuilder app)
+    public static void MapEndpoint(this RouteGroupBuilder app)
     {
-        app.MapGet("/api/track-distributions/{id:guid}", async (Guid id, ISender sender) =>
+        app.MapGet("/{id:guid}", async (Guid id, ISender sender) =>
         {
             var result = await sender.Send(new GetTrackDistributionByIdQuery(id));
             return Results.Ok(ApiResponse.Success(result));

@@ -11,11 +11,11 @@ using TakweneMusic.Application.TrackDistributions.Commands.DeleteTrackDistributi
 
 namespace TakweneMusic.Api.Endpoints.TrackDistributions;
 
-public class DeleteTrackDistribution : ICarterModule
+public static class DeleteTrackDistribution
 {
-    public void AddRoutes(IEndpointRouteBuilder app)
+    public static void MapEndpoint(this RouteGroupBuilder app)
     {
-        app.MapDelete("/api/track-distributions/{id:guid}", async (Guid id, ISender sender) =>
+        app.MapDelete("/{id:guid}", async (Guid id, ISender sender) =>
         {
             var result = await sender.Send(new DeleteTrackDistributionCommand(id));
             return Results.Ok(ApiResponse.Success(result, "Track distribution deleted successfully."));

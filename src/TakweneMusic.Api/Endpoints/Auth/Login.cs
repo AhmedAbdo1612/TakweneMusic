@@ -11,11 +11,11 @@ using TakweneMusic.Application.Users.Common;
 
 namespace TakweneMusic.Api.Endpoints.Auth;
 
-public class Login : ICarterModule
+public static class Login
 {
-    public void AddRoutes(IEndpointRouteBuilder app)
+    public static void MapEndpoint(this RouteGroupBuilder app)
     {
-        app.MapPost("/api/auth/login", async (LoginUserCommand command, ISender sender) =>
+        app.MapPost("/login", async (LoginUserCommand command, ISender sender) =>
         {
             var result = await sender.Send(command);
             return Results.Ok(ApiResponse.Success(result, "Logged in successfully."));

@@ -11,11 +11,11 @@ using TakweneMusic.Application.Common.Models;
 
 namespace TakweneMusic.Api.Endpoints.Tracks;
 
-public class DeleteTrack : ICarterModule
+public static class DeleteTrack
 {
-    public void AddRoutes(IEndpointRouteBuilder app)
+    public static void MapEndpoint(this RouteGroupBuilder app)
     {
-        app.MapDelete("/api/tracks/{id:guid}", async (Guid id, ISender sender) =>
+        app.MapDelete("/{id:guid}", async (Guid id, ISender sender) =>
         {
             var result = await sender.Send(new DeleteTrackCommand(id));
             return Results.Ok(ApiResponse.Success(result, "Track deleted successfully."));

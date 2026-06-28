@@ -11,11 +11,11 @@ using TakweneMusic.Application.Tracks.Common;
 
 namespace TakweneMusic.Api.Endpoints.Tracks;
 
-public class CreateTrack : ICarterModule
+public static class CreateTrack
 {
-    public void AddRoutes(IEndpointRouteBuilder app)
+    public static void MapEndpoint(this RouteGroupBuilder app)
     {
-        app.MapPost("/api/tracks", async (CreateTrackCommand command, ISender sender) =>
+        app.MapPost("", async (CreateTrackCommand command, ISender sender) =>
         {
             var result = await sender.Send(command);
             return Results.Ok(ApiResponse.Success(result, "Track created successfully."));

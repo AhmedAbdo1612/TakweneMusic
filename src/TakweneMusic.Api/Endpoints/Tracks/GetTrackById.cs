@@ -12,11 +12,11 @@ using TakweneMusic.Application.Common.Models;
 
 namespace TakweneMusic.Api.Endpoints.Tracks;
 
-public class GetTrackById : ICarterModule
+public static class GetTrackById
 {
-    public void AddRoutes(IEndpointRouteBuilder app)
+    public static void MapEndpoint(this RouteGroupBuilder app)
     {
-        app.MapGet("/api/tracks/{id:guid}", async (Guid id, ISender sender) =>
+        app.MapGet("/{id:guid}", async (Guid id, ISender sender) =>
         {
             var result = await sender.Send(new GetTrackByIdQuery(id));
             return Results.Ok(ApiResponse.Success(result));

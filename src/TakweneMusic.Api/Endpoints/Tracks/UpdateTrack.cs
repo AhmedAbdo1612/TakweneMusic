@@ -13,11 +13,11 @@ using TakweneMusic.Domain.Enums;
 
 namespace TakweneMusic.Api.Endpoints.Tracks;
 
-public class UpdateTrack : ICarterModule
+public static class UpdateTrack
 {
-    public void AddRoutes(IEndpointRouteBuilder app)
+    public static void MapEndpoint(this RouteGroupBuilder app)
     {
-        app.MapPut("/api/tracks/{id:guid}", async (Guid id, UpdateTrackRequest request, ISender sender) =>
+        app.MapPut("/{id:guid}", async (Guid id, UpdateTrackRequest request, ISender sender) =>
         {
             var command = new UpdateTrackCommand(
                 id,

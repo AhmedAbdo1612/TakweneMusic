@@ -1,4 +1,5 @@
 using Carter;
+using TakweneMusic.Api.Endpoints.Common;
 using TakweneMusic.Api.Middlewares;
 using TakweneMusic.Application;
 using TakweneMusic.Infrastructure;
@@ -62,6 +63,16 @@ app.UseSwaggerUi(settings =>
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
-app.MapCarter();
+//app.MapCarter();
+
+var endpointGroups = typeof(Program).Assembly
+    .GetTypes()
+    .Where(t => t.IsClass && !t.IsAbstract && typeof(IEndpointGroup).IsAssignableFrom(t));
+
+foreach (var groupType in endpointGroups)
+{
+    var endpointGroup = (IEndpointGroup)Activator.CreateInstance(groupType)!;
+    endpointGroup.MapEndpoints(app);
+}
 
 app.Run();

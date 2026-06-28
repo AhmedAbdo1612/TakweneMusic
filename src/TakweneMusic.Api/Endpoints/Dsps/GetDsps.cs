@@ -12,11 +12,11 @@ using TakweneMusic.Application.Dsps.Queries.GetDsps;
 
 namespace TakweneMusic.Api.Endpoints.Dsps;
 
-public class GetDsps : ICarterModule
+public static class GetDsps
 {
-    public void AddRoutes(IEndpointRouteBuilder app)
+    public static void MapEndpoint(this RouteGroupBuilder app)
     {
-        app.MapGet("/api/dsps", async (ISender sender) =>
+        app.MapGet("", async (ISender sender) =>
         {
             var result = await sender.Send(new GetDspsQuery());
             return Results.Ok(ApiResponse.Success(result));

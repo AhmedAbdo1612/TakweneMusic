@@ -12,11 +12,11 @@ using TakweneMusic.Application.Dsps.Common;
 
 namespace TakweneMusic.Api.Endpoints.Dsps;
 
-public class UpdateDsp : ICarterModule
+public static class UpdateDsp
 {
-    public void AddRoutes(IEndpointRouteBuilder app)
+    public static void MapEndpoint(this RouteGroupBuilder app)
     {
-        app.MapPut("/api/dsps/{id:guid}", async (Guid id, UpdateDspRequest request, ISender sender) =>
+        app.MapPut("/{id:guid}", async (Guid id, UpdateDspRequest request, ISender sender) =>
         {
             var command = new UpdateDspCommand(id, request.Name);
             var result = await sender.Send(command);

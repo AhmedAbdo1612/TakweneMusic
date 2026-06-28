@@ -11,11 +11,11 @@ using TakweneMusic.Application.TrackDistributions.Common;
 
 namespace TakweneMusic.Api.Endpoints.TrackDistributions;
 
-public class CreateTrackDistribution : ICarterModule
+public static class CreateTrackDistribution
 {
-    public void AddRoutes(IEndpointRouteBuilder app)
+    public static void MapEndpoint(this RouteGroupBuilder app)
     {
-        app.MapPost("/api/track-distributions", async (CreateTrackDistributionCommand command, ISender sender) =>
+        app.MapPost("", async (CreateTrackDistributionCommand command, ISender sender) =>
         {
             var result = await sender.Send(command);
             return Results.Ok(ApiResponse.Success(result, "Track distribution created successfully."));
