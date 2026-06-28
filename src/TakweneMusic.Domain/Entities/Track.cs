@@ -25,4 +25,15 @@ public class Track
         Genre = genre;
         Status = status;
     }
+
+    public void Update(string title, Guid artistId, string isrc, DateTime releaseDate, string genre, TrackStatus status)
+    {
+        Title = title;
+        ArtistId = artistId;
+        Isrc = isrc;
+        ReleaseDate = releaseDate;
+        Genre = genre;
+        Status = status;
+    }
 }
+
