@@ -1,11 +1,14 @@
-using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
+using System.Text;
+using System.Text.Json;
 using TakweneMusic.Application.Common.Interfaces;
+using TakweneMusic.Application.Common.Models;
 using TakweneMusic.Domain.Entities;
 using TakweneMusic.Infrastructure.Identity;
 using TakweneMusic.Infrastructure.Persistence;
@@ -54,6 +57,18 @@ public static class DependencyInjection
                 ValidIssuer = configuration["Jwt:Issuer"] ?? "TakweneMusic",
                 ValidAudience = configuration["Jwt:Audience"] ?? "TakweneMusic",
                 IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["Jwt:Secret"] ?? "super_secret_key_that_is_at_least_32_bytes_long_12345"))
+            };
+
+            options.Events = new JwtBearerEvents
+            {
+                OnChallenge = async context =>
+                {
+                    context.HandleResponse();
+                    context.Response.StatusCode = StatusCodes.Status401Unauthorized;
+                    context.Response.ContentType = "application/json";
+                    var response = JsonSerializer.Serialize(ApiResponse<bool>.Failure("Unauthorized Access"));
+                    await context.Response.WriteAsync(response);
+                }
             };
         });
 
