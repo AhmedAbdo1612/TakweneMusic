@@ -24,11 +24,11 @@ public class JwtProvider
         var secretKey = _configuration["Jwt:Secret"] ?? "super_secret_key_that_is_at_least_32_bytes_long_12345";
         var issuer = _configuration["Jwt:Issuer"] ?? "TakweneMusic";
         var audience = _configuration["Jwt:Audience"] ?? "TakweneMusic";
-        var expiryMinutesStr = _configuration["Jwt:ExpiryMinutes"] ?? "15";
+        var expiryMinutesStr = _configuration["Jwt:ExpiryMinutes"] ?? "60";
         
         if (!int.TryParse(expiryMinutesStr, out var expiryMinutes))
         {
-            expiryMinutes = 15;
+            expiryMinutes = 60;
         }
 
         var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey));
