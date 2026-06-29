@@ -1,10 +1,7 @@
 # 🎵 TakweneMusic — Enterprise Music & Track Distribution Platform
 
 TakweneMusic is a modern, high-performance music and track distribution platform consisting of a robust **.NET 10 Web API** backend and a responsive **React + Vite** frontend. Built using the principles of **Clean Architecture** and the **CQRS (Command Query Responsibility Segregation)** pattern, the system offers a highly scalable, maintainable, and secure foundation for managing artists, DSPs (Digital Service Providers), tracks, and track distributions.
-# Takwene Music - Track Management System
 
-[![Live Demo - Frontend](https://img.shields.io/badge/Live-Frontend_UI-blue)](رابط_الفرونت_هنا)
-[![Live Demo - API Swagger](https://img.shields.io/badge/Live-API_Swagger-green)](رابط_الباك_إند_هنا/swagger)
 ---
 # 🎵 TakweneMusic - Track Management System
 
@@ -14,8 +11,6 @@ TakweneMusic is a modern, high-performance music and track distribution platform
 * 🚀 **Live Client Dashboard:** [Launch the React Web Application 🔗](https://takwene.onrender.com/)
 * 🛠️ **Live Production API:** [Explore Interactive Swagger Documentation 🔗](https://takwenemusic.onrender.com/swagger/index.html?url=/swagger/v1/swagger.json)
 
-### 🧠 Task & Architecture Documentation
-* 📝 **Architectural Insights:** [Read the DECISIONS.md (AI Audit & Refactoring Log) 💡](https://github.com/AhmedAbdo1612/TakweneMusic/blob/main/DECISIONS.md)
 
 ---
 ## 🏛️ Architecture & Clean Design
