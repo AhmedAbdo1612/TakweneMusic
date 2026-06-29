@@ -19,6 +19,7 @@ Desktop.ini
 # Ignore all markdown files except README.md
 *.md
 !README.md
+!decision.md
 
 # Ignore session logs
 ai-session.txt
