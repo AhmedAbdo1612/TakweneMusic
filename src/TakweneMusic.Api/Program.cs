@@ -1,4 +1,3 @@
-using Carter;
 using TakweneMusic.Api.Endpoints.Common;
 using TakweneMusic.Api.Middlewares;
 using TakweneMusic.Application;
@@ -7,7 +6,6 @@ using TakweneMusic.Infrastructure;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddCarter();
 builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddCors(options =>
@@ -63,7 +61,6 @@ app.UseSwaggerUi(settings =>
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
-//app.MapCarter();
 
 var endpointGroups = typeof(Program).Assembly
     .GetTypes()
