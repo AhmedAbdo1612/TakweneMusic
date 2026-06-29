@@ -59,6 +59,14 @@ Below is an honest, precise breakdown of exactly what the AI generated versus wh
 
 ---
 
+## 5. Frontend Engineering & UX Controls (Human-Driven)
+
+### ⚡ Conversion to Modern JavaScript Submission Model
+
+* **My Modification & Reasoning:** I completely replaced the standard HTML form submission and session reload behavior with a modern, asynchronous JavaScript single-page-application (SPA) data submission model, granting total control over the browser workflow. While tracking interactive inputs via React state hooks, I implemented optimized Axios configurations to communicate directly with our Render production backend, allowing network or domain exceptions to be trapped smoothly inside asynchronous `try...catch` blocks to prevent ugly page reloads and control dynamic loading spinners. Crucially, where the AI co-pilot persistently attempted to enforce strict TypeScript configurations and output messy localized client-side alerts, I explicitly forced the entire frontend dashboard to be written in clean, highly dynamic JavaScript (React JSX) and engineered an explicit error-interception pipeline; this pipeline is specifically designed to parse our backend's unified `ApiResponse` schema, targeting and extracting only the top-level global `message` summary property (e.g., intercepting `"isSuccess": false` and capturing `"One or more validation failures occurred."`) across all create and update endpoints uniformly. This architectural adjustment bubbles up the failure context into a single, high-visibility reactive UI alert banner placed strategically at the top of the forms, providing an instantaneous, streamlined explanation of why an operation failed without disrupting input focus, which significantly reinforces front-to-back contract predictability and maintains production-ready UX symmetry.
+
+---
+
 ## Summary Checklist for the Defense
 
 | Feature Component | What the AI Generated | What I Wrote / Modified / Corrected Myself |
@@ -73,3 +81,4 @@ Below is an honest, precise breakdown of exactly what the AI generated versus wh
 | **DI Runtime Bug** | Corrupted Generic Instantiation & Singleton mismatch | Manually refactored Commands to a **unified request interface** and aligned Lifetimes to **Scoped**. |
 | **User Identity** | Barebones custom user entities | Integrated robust ASP.NET Core **`IdentityUser`**. |
 | **Frontend Language** | TypeScript definitions | Stripped and forced pure **JavaScript / React JSX** submission flows. |
+| **Frontend Form Architecture & Error Handling** | Localized form alerts and complex raw dictionary parsing | Converted form flows to an asynchronous SPA submission model using **Axios wrappers**, and refactored the pipeline to strictly render the centralized **`message` summary** in high-visibility UI alerts across all endpoints. |
