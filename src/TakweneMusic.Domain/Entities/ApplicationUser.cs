@@ -6,17 +6,19 @@ namespace TakweneMusic.Domain.Entities;
 
 public class ApplicationUser : IdentityUser<Guid>
 {
+    public string FullName { get; set; }    
     private readonly List<RefreshToken> _refreshTokens = new();
     public IReadOnlyCollection<RefreshToken> RefreshTokens => _refreshTokens.AsReadOnly();
 
     // Parameterless constructor for EF Core and Identity compatibility
     public ApplicationUser() { }
 
-    public ApplicationUser(string username, string email)
+    public ApplicationUser(string fullname, string email)
     {
         Id = Guid.NewGuid();
-        UserName = username;
+        FullName = fullname;
         Email = email;
+        UserName = email;
     }
 
     public void AddRefreshToken(RefreshToken token)

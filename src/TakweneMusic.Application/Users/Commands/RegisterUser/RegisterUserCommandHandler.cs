@@ -17,6 +17,6 @@ public class RegisterUserCommandHandler : IRequestHandler<RegisterUserCommand, A
 
     public async Task<AuthResponseDto> Handle(RegisterUserCommand request, CancellationToken cancellationToken)
     {
-        return await _identityService.RegisterAsync(request.Username, request.Email, request.Password);
+        return await _identityService.RegisterAsync(request.FullName, request.Email, request.Password);
     }
 }

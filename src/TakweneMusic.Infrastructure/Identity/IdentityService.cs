@@ -26,7 +26,7 @@ public class IdentityService : IIdentityService
         _jwtProvider = jwtProvider;
     }
 
-    public async Task<AuthResponseDto> RegisterAsync(string username, string email, string password)
+    public async Task<AuthResponseDto> RegisterAsync(string fullName, string email, string password)
     {
         var existingUser = await _userManager.FindByEmailAsync(email);
         if (existingUser != null)
@@ -34,7 +34,7 @@ public class IdentityService : IIdentityService
             throw new ArgumentException("A user with this email already exists.");
         }
 
-        var user = new ApplicationUser(username, email);
+        var user = new ApplicationUser(fullName, email);
 
         var result = await _userManager.CreateAsync(user, password);
         if (!result.Succeeded)
