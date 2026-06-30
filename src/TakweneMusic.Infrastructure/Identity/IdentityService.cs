@@ -61,7 +61,7 @@ public class IdentityService : IIdentityService
         {
             AccessToken = accessToken,
             RefreshToken = refreshTokenValue,
-            Username = user.UserName ?? string.Empty,
+            FullName = string.IsNullOrEmpty(user.FullName) ? "User" : user.FullName,
             Email = user.Email ?? string.Empty
         };
     }
@@ -98,7 +98,7 @@ public class IdentityService : IIdentityService
         {
             AccessToken = accessToken,
             RefreshToken = refreshTokenValue,
-            Username = user.UserName ?? string.Empty,
+            FullName = string.IsNullOrEmpty(user.FullName) ? "User" : user.FullName,
             Email = user.Email ?? string.Empty
         };
     }
@@ -154,7 +154,7 @@ public class IdentityService : IIdentityService
         {
             AccessToken = newAccessToken,
             RefreshToken = newRefreshTokenValue,
-            Username = user.UserName ?? string.Empty,
+            FullName = string.IsNullOrEmpty(user.FullName) ? "User" : user.FullName ,
             Email = user.Email ?? string.Empty
         };
     }
